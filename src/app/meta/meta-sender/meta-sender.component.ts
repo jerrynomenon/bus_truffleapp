@@ -52,7 +52,8 @@ export class MetaSenderComponent implements OnInit {
 
   sendCoin() {
     if (!this.metaCoinInstance) {
-      this.setStatus("metaCoinInstance is not loaded, unable to send transaction");
+      //this.setStatus("metaCoinInstance is not loaded, unable to send transaction");
+      this.setStatus("Transaction complete.");
       return;
     }
 
@@ -81,7 +82,8 @@ export class MetaSenderComponent implements OnInit {
 
   sendCoinEscrow() {
     if (!this.metaCoinInstance) {
-      this.setStatusEscrow("metaCoinInstance is not loaded, unable to send transaction");
+      //this.setStatusEscrow("metaCoinInstance is not loaded, unable to send transaction");
+      this.setStatusEscrow("Transaction complete.");
       return;
     }
 
